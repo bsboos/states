@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>List view</title>
+</head>
+<body>
+
+	<p>Query Set: {{ states }} </p>
+	<br>
+
+
+	{% for state in states %}
+		<a href="/detail/{{ state.pk }}/"> {{ state.name}} </a>
+
+		<br>
+	{% endfor %}
+
+</body>
+</html>

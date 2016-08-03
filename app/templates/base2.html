@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>I am a grumpy cat</title>
+</head>
+	<body bgcolor="#000000" >
+	<font color="white">
+		<p style="font-family:courier">
+			{% for state, cities in states.items %}
+
+				<h3>{{ state }} </h3> </br>
+
+				{% for city in cities %}
+					{{ city }} <br>
+				{% endfor %}
+
+
+			{% endfor %}
+		</p>
+	</font>
+	</body>
+</html>
