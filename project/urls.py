@@ -1,5 +1,7 @@
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.conf.urls.static import static
+
 
 from app import views 
 
@@ -54,4 +56,4 @@ urlpatterns = [
     url(r'^detail/(?P<pk>\d+)/', 'app.views.detail'),
 
 
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
